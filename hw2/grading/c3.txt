@@ -1,0 +1,4 @@
+insertline=5
+insertword=5:/After
+insertword=5:After/a
+insertword=5:a/while

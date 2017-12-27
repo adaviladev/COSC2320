@@ -1,0 +1,35 @@
+#/bin/bash
+if [ $# -ne 0 ]; then
+    echo "Usage: self-check"
+    exit
+fi
+
+filename="ps"
+echo "Compiling..."
+g++ -Wall -std=c++11 *.cpp -o $filename
+if [ $? -ne 0 ]; then
+    echo "Failed to compile."
+    exit
+else
+    echo "Done."
+fi
+
+casecount=2
+timeout="2s"
+echo "Begin testing..."
+mode=("" "fifo" "roundrobin")
+for casenum in `seq 1 1 $casecount`; do
+    echo -e "\tTest case $casenum"
+    timeout -k $timeout $timeout ./$filename "input=$casenum.txt;size=5;scheduling=${mode[$casenum]};quantum=1" 1>$casenum.selfcheck.stdout 2>$casenum.selfcheck.stderr 
+    if [ $? -ne 0 ]; then
+        echo -e "\t\tProgram killed due to timeout ($timeout)."
+    fi
+    diff -iEBwu $casenum.stdout $casenum.selfcheck.stdout > $casenum.selfcheck.diff
+    if [ $? -ne 0 ]; then
+        echo -e "\t\tFAILED."
+    else
+        echo -e "\t\tPASSED."
+        rm -f $casenum.selfcheck.diff
+    fi
+done
+

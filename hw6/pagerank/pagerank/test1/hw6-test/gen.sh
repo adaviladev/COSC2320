@@ -1,0 +1,16 @@
+cp page1.html mypage1.html
+cp page2.html mypage2.html
+cp page3.html mypage3.html
+cp page4.html mypage4.html
+cp page5.html mypage5.html
+cp page6.html mypage6.html
+cp page7.html mypage7.html
+cp page8.html mypage8.html
+cp page10.html mypage9.html
+cp page10.html mypage10.html
+cp page11.html mypage11.html
+cp page12.html mypage12.html
+cp page13.html mypage13.html
+cp page14.html mypage14.html
+cp page15.html mypage15.html
+cp page16.html mypage16.html

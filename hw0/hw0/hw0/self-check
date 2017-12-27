@@ -1,0 +1,23 @@
+#/bin/bash
+if [ $# -ne 1 ]; then
+    echo "Usage: self-check [program name]"
+    echo "Example: self-check count"
+    exit
+fi
+
+grade=10
+for casenum in `seq 1 1 9`; do
+    echo "Test case $casenum"
+    # ./$1 filename=$casenum.txt 1>$casenum.student.stdout
+    ./$1 filename=$casenum.txt 2>$casenum.student.stderr 1>$casenum.student.stdout
+    diff -i -E -B -w $casenum.student.stdout $casenum.stdout > $casenum.diff
+    if [ $? -ne 0 ]; then
+        echo -e "\tFAILED."
+    else
+        echo -e "\tPASSED."
+        rm -f $casenum.diff
+        let grade=grade+10
+    fi
+done
+echo $grade > GRADE
+echo "Overall grade is $grade"

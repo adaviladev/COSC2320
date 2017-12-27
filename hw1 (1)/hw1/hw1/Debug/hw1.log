@@ -1,0 +1,16 @@
+﻿Build started 9/27/2015 11:53:02 PM.
+     1>Project "C:\GoogleDrive\COSC2320\hw1\hw1\hw1\hw1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt infinitearithmetic.cpp
+         infinitearithmetic.cpp
+     1>c:\googledrive\cosc2320\hw1\hw1\hw1\infinitearithmetic.cpp(206): warning C4101: 'num2': unreferenced local variable
+     1>c:\googledrive\cosc2320\hw1\hw1\hw1\infinitearithmetic.cpp(206): warning C4101: 'num1': unreferenced local variable
+     1>c:\googledrive\cosc2320\hw1\hw1\hw1\infinitearithmetic.cpp(208): warning C4101: 'ch': unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\GoogleDrive\COSC2320\hw1\hw1\Debug\hw1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\GoogleDrive\COSC2320\hw1\hw1\Debug\hw1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\GoogleDrive\COSC2320\hw1\hw1\Debug\hw1.lib" /MACHINE:X86 Debug\infinitearithmetic.obj
+         hw1.vcxproj -> C:\GoogleDrive\COSC2320\hw1\hw1\Debug\hw1.exe
+     1>Done Building Project "C:\GoogleDrive\COSC2320\hw1\hw1\hw1\hw1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.03

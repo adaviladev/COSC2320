@@ -1,0 +1,4 @@
+insertline=2
+deleteline=1
+insertword=2:twenty/linux
+insertword=2:linux/ubuntu

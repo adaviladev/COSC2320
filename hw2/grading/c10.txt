@@ -1,0 +1,3 @@
+deleteword=1:abc
+deleteword=3:ghi
+deleteword=2:def

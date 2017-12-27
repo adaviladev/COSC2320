@@ -1,0 +1,11 @@
+insertword=1:cat/dog
+deleteword=1:cat
+insertword=2:moon/sun
+deleteword=2:moon
+insertline=3
+insertword=3:/This
+insertword=3:This/fake
+insertword=3:This/is
+insertword=3:is/a
+insertline=7
+insertword=7:/seven

@@ -1,0 +1,5 @@
+#include <string>
+int main (int argc , char* argv[]) {
+int i;
+string s;
+  s= " if{ } [ x=1   }

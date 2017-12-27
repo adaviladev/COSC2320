@@ -1,0 +1,4 @@
+deleteword=1:floor
+deleteword=3:floor
+deleteword=8:air
+deleteline=8

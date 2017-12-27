@@ -1,0 +1,14 @@
+--- 3.stdout	2015-10-06 17:01:42.505456097 -0500
++++ 3.selfcheck.stdout	2015-10-07 22:01:36.401578648 -0500
+@@ -1,5 +1,9 @@
+-This is the line
+-INITIAL
++This is the first line 
++second line 
+ In the begining
+ God created heavens
+ the end
++INITIAL
++INITIAL 
++This is the line 
++INITIAL 

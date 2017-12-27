@@ -1,0 +1,28 @@
+#/bin/bash
+if [ $# -ne 0 ]; then
+    echo "Usage: self-check"
+    exit
+fi
+
+filename="infinitearithmetic"
+casecount=1
+
+echo "Compiling..."
+g++ -std=c++11 *.cpp -o $filename
+if [ $? -ne 0 ]; then
+    echo "Failed to compile."
+    exit
+fi
+
+for casenum in `seq 1 1 $casecount`; do
+    echo "Test case $casenum"
+    ./$filename "input=$casenum.txt;digitsPerNode=2" 2>$casenum.student.stderr 1>$casenum.student.stdout
+    diff -i -E -B -w $casenum.student.stdout $casenum.stdout > $casenum.diff
+    if [ $? -ne 0 ]; then
+        echo -e "\tFAILED."
+    else
+        echo -e "\tPASSED."
+        rm -f $casenum.diff
+    fi
+done
+

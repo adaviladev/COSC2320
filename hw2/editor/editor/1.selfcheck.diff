@@ -1,0 +1,22 @@
+--- 1.stdout	2015-10-06 17:01:42.505456097 -0500
++++ 1.selfcheck.stdout	2015-10-07 22:01:36.394578656 -0500
+@@ -1,12 +1,15 @@
+-The dog went here and there
+-And the sun spun round like a top
+-This is a fake
++The cat went here and there 
++And the moon spun round like a top 
+ But the nearest kin of the star
+ The creeping cat looked up
+ Black Minnaloushe stared at the moon
+-seven
+ For wander and wail as he would
+ The pure cold light in the sky
+ Troubled his animal blood
+ Minnaloushe runs in the grass
+ Lifting his delicate feet
++This
++This 
++The dog went here and there 
++And the sun spun round like a top 
++This is a fake 

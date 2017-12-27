@@ -1,0 +1,4 @@
+deleteline=2
+deleteword=1:first
+insertline=2
+insertword=2:/INITIAL

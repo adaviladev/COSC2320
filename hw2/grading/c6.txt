@@ -1,0 +1,5 @@
+deleteword=1:one
+deleteword=1:nineteen
+deleteword=1:two
+deleteword=1:eighteen
+deleteword=1:three

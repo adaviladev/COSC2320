@@ -1,0 +1,30 @@
+--- 2.stdout	2015-11-21 00:35:53.862309340 -0600
++++ 2.selfcheck.stdout	2015-11-22 17:22:22.235916069 -0600
+@@ -4,14 +4,16 @@
+ 2	1	8	executing
+ 3	1	8	executing
+ 4	1	8	executing
+-5	1	8	executing
+-5	2	2	start
+-6	2	2	executing
+-7	1	8	executing
+-7	3	3	start
+-8	3	3	executing
+-9	2	2	end
+-10	1	8	executing
+-11	3	3	executing
+-12	1	8	end
+-13	3	3	end
++   4         2        2 start
++   5         2        2 executing
++   6         1        8 executing
++   6         3        3 start
++   7         3        3 executing
++   8         2        2 end
++   9         1        8 executing
++  10         3        3 executing
++  11         3        3 end
++  12         1        8 executing
++  12         3        3 end
++  12         3        3 end
++  13         1        8 end

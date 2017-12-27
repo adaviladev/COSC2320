@@ -1,0 +1,9 @@
+deleteline=2
+insertline=3
+insertword=3:/End
+deleteword=1:icorrect
+insertword=1:an/incorrect
+insertword=1:This/sentence
+deleteword=1:is
+deleteword=1:an
+deleteword=1:an
